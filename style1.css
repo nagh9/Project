@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;}
+
+#header { display: flex;
+ align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+background-color:rgb(232, 230, 230) ;
+box-shadow: 0 5px 15px rgb(0, 0, 2);
+z-index: 999;
+position: sticky;
+top: 0;
+left:0;}
+
+#hero-section{ width: 100%;
+    height:calc(100vh-120px);
+    background-image: url('../assets/Premium Photo _ Facial powders with powder brushes on dark table.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 150px;
+    margin:auto;
+    display:block;
+    margin-top: 220px;
+    color:rgb(146, 12, 56);
+    text-transform: capitalize;
+    font-size: 50px;}   
+
+h2 { font-family:Verdana, Geneva, Tahoma, sans-serif;
+ color:rgb(227, 85, 132) ;
+font-weight: bold;
+font-size: 26;}
+
+#link-container { display: flex;
+align-items: center;
+justify-content: center;}
+#link-container  li{ 
+    list-style: none;
+    padding: 0 20px;
+    position: relative;}
+#link-container li  a{ text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color:  rgb(148, 22, 125);
+transition: 0.3s ease;}
+ 
+#link-container li  a.active { color:rgb(227, 85, 132) ;}
+#link-container li  a:hover::after{ content:"";
+width: 30%;
+height: 2px;
+background-color:rgb(227, 85, 132);
+position: absolute;
+bottom:-4px;
+left: 20px;}
+
+#bar{ display:none;
+align-items: center;}
+
+#close , svg  { display: none;}
+                                    
+
+.search{
+    width: 300px;
+    display:inline-flex;
+}
+.search-box{
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #2f2d2d;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+.search-buttn{
+    width: 30%;
+    height: 30px;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search-box::placeholder{
+    color: #7c7979;}
+
+#products{
+    align-items: center;
+text-align: center;
+font-size: 24px;
+}
+.procontainer{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline; 
+padding-top: 30px;
+}
+.pro{
+ width :22%;
+min-width: 90px;
+padding:20px 15px;
+border: 1px solid gray;
+border-radius: 10px; 
+cursor:pointer;
+box-shadow: 10px 10px 15px ;
+margin: 15px 20px;
+ }
+
+.pro img{ width:70%;
+border-radius: 20px;}
+.description{ text-align: start;
+padding:10px 0;}
+.description span{font-size: 20px;
+                            color:black;}
+.description h5{ padding-top: 7px;
+font-size: 17px;
+color:rgb(148, 22, 125);}
+.description h4{ font-size: 17px;
+color:rgb(148, 22, 125);}
+
+.btns-container{
+    display: flex;
+}
+
+.minbtn, .cart-btn , .plusbtn{ display: flex;
+    position: relative;
+     justify-content: center;
+     align-items: center;
+     height: 45px;
+     width: 40;}
+.minbtn , .plusbtn{ display: none;
+font-weight: 700;
+margin: 0 5px;}
+.minbtn , .cart-btn , .plusbtn{ 
+     color : rgb(148, 16, 124);
+    border: 0;
+    width: 40%;
+    background-color: #847e7e;
+    padding: 12px 22px ;
+   font-size: 0.9rem;
+   outline:none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart-btn:hover{ color:pink;}
+
+
+.carousel-item img{
+    display: block;
+    margin: auto;
+}
+
+#newsletter{  height: 300px;
+    width: 100%;
+    display: flex;
+    background-color:rgb(232, 230, 230);
+    justify-content:space-around;
+    align-items: center;
+}
+.newstext h4{ font-size: 22px;
+font-weight: 700;
+color:#2f2d2d;}
+.newstext p{ font-size: 14px;
+font-weight: 600;
+color: #383838;}
+
+.form{ display: flex;
+width:30%;
+}
+
+.form input{ height: 30px;
+padding:20px 20px 20px 20px;
+font-size: 14px;
+width:100%;
+border:1px solid transparent;
+border-radius: 4px;
+outline: none;}
+.form button{ background-color: #383838;
+color:#fff;
+border:0; 
+white-space:nowrap;}
+
+.footer-title, .info{
+    color: rgba(99, 95, 95, 0.75);
+    margin: 20px 0;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-title{
+    margin-top: 80px;
+    color: #383838;
+    font-size:26px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: bold;}
+
+
+.footer-social-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.follow{
+ display: flex;
+ justify-content:space-between;
+ align-items: baseline;
+ margin: 35px 35px 35px 35px;
+ color: rgba(99, 95, 95, 0.75);
+ cursor: pointer;
+}
+.follow  { width:30px;}
+.follow :hover{ color:blue}
+
+
+
+
+@media (max-width:799px){
+h2{ font-size: 10;
+margin: 0;
+padding:10 10 10 10 ;}
+#link-container{  display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+position: fixed;
+top:0;
+right:-300px;
+height:70vh;
+width:300px;
+background-color:rgb(227, 85, 132) ;
+box-shadow: 0 40px 60px  rgba(99, 95, 95, 0.75);
+padding: 80px 0 0 10px;
+transition: 0.3s;
+}
+
+#link-container.active{ right:0px;}
+#link-container li{ margin-bottom: 25px;}
+
+#mobile  svg {display: flex;
+align-items: center;
+color: #1f1e1e;
+font-size: 35px;
+padding-left: 20px;}
+
+#close svg { display:initial;
+position: absolute;
+font-size: 35px;
+top:30px;
+left:30px;
+color: #1f1e1e;}
+ 
+#products{display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+align-items: center;}
+#hero-section{ height: 70vh;
+padding: 0 80px;
+background-position: top 30px right 30px ;}
+.procontainer{ justify-content: center;}
+.pro{margin:15px;}
+.btns-container{ width:90px;}
+.minbtn , .plusbtn{margin:1px;}
+.cart-btn{ width: 90px;}
+footer{height: 70vh; }
+#fb , #twit , #insta{ width:30px;}
+#fb , #twit , #insta:hover{ color:blue}}
+        
